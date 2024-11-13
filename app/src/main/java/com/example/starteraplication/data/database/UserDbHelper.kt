@@ -15,7 +15,7 @@ class UserDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
 
         override fun onCreate(db: SQLiteDatabase) {
             val SQL_CREATE_ENTRIES =
-                "CREATE TABLE $ {UserContract.UserEntry.TABLE_NAME} (" +
+                "CREATE TABLE ${UserContract.UserEntry.TABLE_NAME} (" +
                         "${UserContract.UserEntry.COLUMN_ID} INTEGER PRIMARY KEY," +
                         "${UserContract.UserEntry.COLUMN_NAME} TEXT," +
                         "${UserContract.UserEntry.COLUMN_AGE} INTEGER," +
@@ -87,3 +87,5 @@ class UserDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
             return db.delete(UserContract.UserEntry.TABLE_NAME, selection, selectionArgs)
         }
     }
+
+// Uma modificação para teste de pull request!s

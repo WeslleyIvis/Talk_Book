@@ -88,4 +88,4 @@ class UserDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
         }
     }
 
-// Uma modificação para teste de pull request!
+// Uma modificação para teste de pull request!s

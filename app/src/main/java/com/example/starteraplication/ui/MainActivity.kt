@@ -1,5 +1,6 @@
 package com.example.starteraplication.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -22,7 +23,11 @@ class MainActivity : AppCompatActivity() {
         val inputLogin = findViewById<EditText>(R.id.input_login)
 
         btnLogin.setOnClickListener {
-            textCreateAccount.text = inputLogin.text
+
+
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+
         }
     }
 }

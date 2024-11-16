@@ -19,15 +19,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnLogin = findViewById<Button>(R.id.btn_login)
-        val textCreateAccount = findViewById<TextView>(R.id.text_create_acc)
-        val inputLogin = findViewById<EditText>(R.id.input_login)
 
         btnLogin.setOnClickListener {
-
-
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
-
         }
     }
 }

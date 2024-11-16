@@ -16,7 +16,7 @@ class UserDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, 
         override fun onCreate(db: SQLiteDatabase) {
             val SQL_CREATE_ENTRIES =
                 "CREATE TABLE ${UserContract.UserEntry.TABLE_NAME} (" +
-                        "${UserContract.UserEntry.COLUMN_ID} INTEGER PRIMARY KEY," +
+                        "${UserContract.UserEntry.COLUMN_ID} INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "${UserContract.UserEntry.COLUMN_NAME} TEXT," +
                         "${UserContract.UserEntry.COLUMN_AGE} INTEGER," +
                         "${UserContract.UserEntry.COLUMN_EMAIL} TEXT," +

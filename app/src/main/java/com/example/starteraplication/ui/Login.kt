@@ -10,11 +10,9 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_window)
-
         findViewById<TextView>(R.id.btn_text_create_account).setOnClickListener {
             val intent = Intent(this, LoginCreateAccount::class.java)
             startActivity(intent)
-
         }
     }
 }
